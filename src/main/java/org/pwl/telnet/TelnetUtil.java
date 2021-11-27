@@ -47,6 +47,7 @@ public class TelnetUtil implements Runnable {
         if (!apiKey.isEmpty()) {
             Trans.send(socket, runningConfig.encode, "验证成功，欢迎你，" + username + "\r\n");
             Trans.send(socket, runningConfig.encode, Util.getHelpText());
+            Util.getMessages(apiKey, 1, socket, runningConfig);
         } else {
             Trans.send(socket, runningConfig.encode, "验证失败，用户名或密码错误。\r\n");
             try {
