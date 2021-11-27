@@ -37,6 +37,7 @@ public class TelnetUtil implements Runnable {
         String username = Trans.input(socket, runningConfig.encode);
         Trans.send(socket, runningConfig.encode, "请输入摸鱼派社区密码\r\n");
         String password = Trans.input(socket, runningConfig.encode);
+        Trans.send(socket, runningConfig.encode, "登录验证中，请稍等\r\n");
 
     }
 }
