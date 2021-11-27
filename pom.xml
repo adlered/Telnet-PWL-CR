@@ -37,11 +37,17 @@
     </build>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.arronlong/httpclientutil -->
+        <!-- https://mvnrepository.com/artifact/org.jodd/jodd-http -->
         <dependency>
-            <groupId>com.arronlong</groupId>
-            <artifactId>httpclientutil</artifactId>
-            <version>1.0.4</version>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd-http</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
         </dependency>
     </dependencies>
 
